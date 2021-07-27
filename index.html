@@ -1,43 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
 <style>
-     ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+li {
+    display: inline;
+}
+a {
+ display: inline-block;
+ padding-left: 15px;
+ padding-top: 25px;
+}
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 </style>
-<!DOCTYPE html>
+</head>
 <header>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<nav id="nav-bar">
+    <div id="float-l-as">
     <ul>
-        <li<a href="#">About</li>
-        <li<a href="#">Store</li>
-        <li<a href="#">Gmail</li>
-        <li<a href="#">Images</li>
-        <li<a href="#"><i id="apps-icon" class="material-icons">apps</i></li>
-        <li id="sign-in-button">Sign in</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+        <li style="float:right"><a href="#">Sign in</a></li>
+        <li style="float:right"><a href="#"><i id="apps-icon" class="material-icons">apps</i></li>
+        <li style="float:right"><a href="#">Images</a></li>
+        <li style="float:right"><a href="#">Gmail</a></li>
     </ul>
+    </div>
 </nav>
 </header>
 <body>
-    <div id="logo-search-bar">
+    <div class="center">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" id="google-logo">
-        <input type="search" id="search-bar" name="search">
         <i id="search-icon" class="material-icons">search
-        </i>
-    </div>
+        </i> 
+        <input type="search" id="search-bar" name="search">
     <div id="center-buttons">
         <h2>Google Search</h2>
         <h2>I'm Feeling Lucky</h2>
     </div>
+    </div>
 </body>
 <footer id="footer">
 <ul>
-    <li<a href="#">Advertising</li>
-    <li<a href="#">Business</li>
-    <li<a href="#">How Search works</li>
-    <li<a href="#">Privacy</li>
-    <li<a href="#">Terms</li>
-    <li<a href="#">Settings</li>
+    <li><a href="#">Advertising</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">How Search works</a></li>
+    <li style="float:right"><a href="#">Settings</a></li>
+    <li style="float:right"><a href="#">Terms</a></li>
+    <li style="float:right"><a href="#">Privacy</a></li>
 </ul>
 </footer>
+</html>
